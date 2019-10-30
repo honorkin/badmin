@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
+        app:layout_constraintTop_toTopOf="parent"
         tools:context="com.example.administrator.myapplication.MainActivity">
 
 
@@ -19,10 +19,9 @@
             android:id="@+id/gridView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:numColumns="3"
-            android:verticalSpacing="10dp"
             android:horizontalSpacing="10dp"
-            />
+            android:numColumns="3"
+            android:verticalSpacing="10dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
